@@ -612,6 +612,8 @@ color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
 color colorAccent
+color colorIcon
+color colorIconPressed
 color colorPrimary
 color colorPrimaryDark
 color common_google_signin_btn_text_dark
@@ -844,6 +846,7 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -1014,6 +1017,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable button_bg
 drawable calendar_icon
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
@@ -1075,7 +1079,7 @@ id META
 id Removebutton
 id SHIFT
 id SYM
-id Sbutton
+id SearchButton
 id Viewbutton
 id action0
 id action_bar
@@ -1114,6 +1118,7 @@ id buttonMenu
 id buttonPanel
 id buttonSave
 id calendarView
+id calender_icon
 id cancel_action
 id center
 id center_horizontal
@@ -1133,6 +1138,7 @@ id customPanel
 id dark
 id decor_content_parent
 id default_activity_button
+id description
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1154,6 +1160,7 @@ id eventDate
 id eventDescript
 id eventName
 id eventTime
+id eventTitle
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1187,7 +1194,7 @@ id line3
 id listMode
 id listView
 id list_item
-id loginButton
+id loginButton2
 id masked
 id media_actions
 id message
@@ -1227,6 +1234,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id searchButton
 id search_badge
 id search_bar
 id search_button
@@ -1350,7 +1358,9 @@ layout activity_event_adapter
 layout activity_login
 layout activity_main
 layout activity_remove_event
+layout activity_search
 layout activity_view_event
+layout content_search
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1432,6 +1442,7 @@ string action_sign_in_short
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
+string calendar_icon
 string character_counter_content_description
 string character_counter_pattern
 string common_google_play_services_enable_button
@@ -1452,19 +1463,13 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
-string default_web_client_id
 string error_field_required
 string error_incorrect_password
 string error_invalid_email
 string error_invalid_password
+string event_title
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
-string firebase_database_url
-string gcm_defaultSenderId
-string google_api_key
-string google_app_id
-string google_crash_reporting_api_key
-string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string log_in
 string login
@@ -1476,12 +1481,12 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string permission_rationale
-string project_id
 string prompt_email
 string prompt_password
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_activity_login
+string title_activity_search
 string username
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
@@ -1490,6 +1495,9 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style AppTheme
+style AppTheme_AppBarOverlay
+style AppTheme_NoActionBar
+style AppTheme_PopupOverlay
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog

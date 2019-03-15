@@ -46,25 +46,6 @@ public class EventAdapter extends ArrayAdapter<Event> {
 
 
         return listItem;
-        /*
-        View listItem = convertView;
-
-        if(listItem == null)
-            listItem = LayoutInflater.from(mContext).inflate(R.layout.activity_event_adapter,parent,false);
-
-        Event currentEvent = EventList.get(position);
-
-        TextView name = (TextView) listItem.findViewById(R.id.editTextTitle);
-        name.setText(currentEvent.getTitle());
-
-        TextView time = (TextView) listItem.findViewById(R.id.editTextTime);
-        time.setText(currentEvent.getTime());
-
-        TextView descript = (TextView) listItem.findViewById(R.id.editTextDescription);
-        descript.setText(currentEvent.getDescription());
-
-        return listItem;
-        */
     }
 
 }

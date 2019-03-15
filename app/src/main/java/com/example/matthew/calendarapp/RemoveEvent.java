@@ -25,13 +25,8 @@ public class RemoveEvent extends AppCompatActivity {
     private DatabaseReference myRef;
     private ListView ListView;
 
-    private ChildEventListener childEventListener;
-
     private ArrayList<Event> EventList;
 
-    private ArrayList<Event> searchResults;
-
-    private EventAdapter listAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,56 +63,7 @@ public class RemoveEvent extends AppCompatActivity {
             }
         });
     }
-   /* @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_remove_event);
-        database = FirebaseDatabase.getInstance();
-        myRef = database.getReference();
 
-        // Initializes the local data structures
-        EventList = new ArrayList<Event>();
-        searchResults = new ArrayList<Event>();
-
-        // Sets up the event listener that will specify what happens when access of a node
-        // occurs in the database
-        childEventListener = new ChildEventListener() {
-            // Method is run when any new node is added to the database, and once
-            // for every existing node when the activity is loaded
-            @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                EventList.add(dataSnapshot.getValue(Event.class));
-
-            }
-
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-            }
-
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
-            }
-
-            @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-            }
-        };
-
-
-
-        myRef.addChildEventListener(childEventListener);
-
-        // Sets up the list view/list adapter to read from the search results array
-        listAdapter = new EventAdapter(this, searchResults);
-
-        //Associates the ListView to the adapter
-        ListView results = findViewById(R.id.listView);
-    }
-*/
     // Upon button click of "Remove"
     public void remove(View view) {
         int count = 0;

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "462065037727-1vjsprenr7kne6f6v4rt2c9h9r9nh1sl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.matthew.calendarapp",
+            "certificate_hash": "d9589803f8c283c7a2d93ea4fbcb0613f5b10711"
+          }
+        },
+        {
           "client_id": "462065037727-2p520jko1pvv16srlnkf3hna3faj0ooc.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
