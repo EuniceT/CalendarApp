@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     CalendarView calendarView;
     TextView Date;
     Button AddButton;
-    Button SButton;
+    Button SearchButton;
     Button RemoveButton;
     Button LoginButton;
     String the_date;
@@ -27,12 +27,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        calendarView = (CalendarView) findViewById(R.id.calendarView);
-        Date = (TextView) findViewById(R.id.Date);
-        AddButton = (Button) findViewById(R.id.Addbutton);
-        SButton = (Button) findViewById(R.id.Sbutton);
-        RemoveButton = (Button) findViewById(R.id.Removebutton);
-        LoginButton = (Button) findViewById(R.id.LoginButton);
+        calendarView = findViewById(R.id.calendarView);
+        Date = findViewById(R.id.Date);
+        AddButton = findViewById(R.id.Addbutton);
+        SearchButton = findViewById(R.id.SearchButton);
+        RemoveButton = findViewById(R.id.Removebutton);
+        LoginButton = findViewById(R.id.LoginButton);
 
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
@@ -46,21 +46,21 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void EventAdding( View view)
+    public void EventAdding(View view)
     {
         Intent intent = new Intent( this, AddingActivity.class);
         intent.putExtra("USER DATE", the_date);
         startActivity(intent);
     }
 
-    public void EventRemoval( View view)
+    public void EventRemoval(View view)
     {
         Intent intent = new Intent( this, RemoveEvent.class);
         startActivity(intent);
     }
 
 
-    public void EventView( View view)
+    public void EventView(View view)
     {
         Intent intent = new Intent( this, ViewEvent.class);
         startActivity(intent);
@@ -69,6 +69,11 @@ public class MainActivity extends AppCompatActivity {
     public void EventLogin(View view) {
 
         Intent intent = new Intent (MainActivity.this, LoginActivity.class );
+        startActivity(intent);
+    }
+
+    public void EventSearch(View view) {
+        Intent intent = new Intent (MainActivity.this, SearchEvent.class );
         startActivity(intent);
     }
 }

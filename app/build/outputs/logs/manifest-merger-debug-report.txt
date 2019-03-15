@@ -72,19 +72,19 @@ INJECTED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\
 	xmlns:android
 		ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.GET_ACCOUNTS
+ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:5:5-71
+	android:name
+		ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:5:22-68
+uses-permission#android.permission.READ_PROFILE
 ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:6:5-71
 	android:name
 		ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:6:22-68
-uses-permission#android.permission.READ_PROFILE
-ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:7:5-71
-	android:name
-		ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:7:22-68
 uses-permission#android.permission.READ_CONTACTS
-ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:8:5-72
+ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:7:5-72
 	android:name
-		ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:8:22-69
+		ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:7:22-69
 application
-ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:10:5-28:19
+ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:9:5-28:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\eunic\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\71553cec6772397ffc29840634b99bf5\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] C:\Users\eunic\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\71553cec6772397ffc29840634b99bf5\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\eunic\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\ce99e79d408e8b024e775720b9573e55\AndroidManifest.xml:9:5-20
@@ -130,19 +130,23 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\eunic\.gra
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\eunic\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\a27b996c67a49f7bc69720658e175062\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:13:9-41
+		ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:14:9-54
+		ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:12:9-43
+		ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:16:9-40
+		ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:15:9-40
+activity#com.example.matthew.calendarapp.SearchEvent
+ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:16:9-58
+	android:name
+		ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:16:19-46
 activity#com.example.matthew.calendarapp.LoginActivity
-ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:17:9-19:69
+ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:17:9-19:60
 	android:label
 		ADDED from C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\src\main\AndroidManifest.xml:19:13-57
 	android:name

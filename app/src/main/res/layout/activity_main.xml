@@ -33,10 +33,11 @@
             tools:layout_editor_absoluteY="416dp" />
 
         <Button
-            android:id="@+id/Sbutton"
+            android:id="@+id/SearchButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Search"
+            android:onClick="EventSearch"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.54"
             app:layout_constraintStart_toStartOf="parent"
