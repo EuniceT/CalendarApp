@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     Button AddButton;
     Button SButton;
     Button RemoveButton;
+    Button LoginButton;
     String the_date;
 
     @Override
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         AddButton = (Button) findViewById(R.id.Addbutton);
         SButton = (Button) findViewById(R.id.Sbutton);
         RemoveButton = (Button) findViewById(R.id.Removebutton);
+        LoginButton = (Button) findViewById(R.id.LoginButton);
 
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
@@ -61,6 +63,12 @@ public class MainActivity extends AppCompatActivity {
     public void EventView( View view)
     {
         Intent intent = new Intent( this, ViewEvent.class);
+        startActivity(intent);
+    }
+
+    public void EventLogin(View view) {
+
+        Intent intent = new Intent (MainActivity.this, LoginActivity.class );
         startActivity(intent);
     }
 }

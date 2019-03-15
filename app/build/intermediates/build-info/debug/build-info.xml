@@ -2,13 +2,13 @@
 <instant-run
     abi="arm64-v8a,armeabi-v7a,armeabi"
     api-level="28"
-    build-mode="COLD"
+    build-mode="FULL"
     density="420dpi"
     format="10"
     plugin-version="3.3.2"
-    timestamp="1552616601070"
+    timestamp="1552625316732"
     token="-5389532646872414039"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
@@ -23,15 +23,64 @@
         name="verifier"
         duration="0" />
 
+    <artifact
+        location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+        type="SPLIT_MAIN" />
+
     <build
         build-mode="FULL"
-        timestamp="1552611025105"
+        timestamp="1552625316732"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
@@ -40,25 +89,16 @@
             location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
@@ -67,48 +107,5 @@
             location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="R_CLASS_CHANGE"
-        timestamp="1552615749440"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\eunic\Documents\College\UCI Stuff\uci3year\UCI Winter 19\ICS 45J\hw5\CalendarApp\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1552616601070"
-        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>
