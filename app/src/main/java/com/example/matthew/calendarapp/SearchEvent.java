@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -34,9 +35,9 @@ public class SearchEvent extends AppCompatActivity {
         EventList = new ArrayList<>();
 
 
-
-//        database = FirebaseDatabase.getInstance();
-//        myRef = database.getReference("message");
+        FirebaseApp.initializeApp(this);
+        database = FirebaseDatabase.getInstance();
+        myRef = database.getReference("message");
 
     }
 
