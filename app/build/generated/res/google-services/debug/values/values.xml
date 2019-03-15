@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">462065037727-v3qbjjdego3irot594n5gqn5o2gm1p4m.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://calendarapp-f719d.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">462065037727</string>
+    <string name="google_api_key" translatable="false">AIzaSyC0GLVzf_GZbD_1u7SLcRf5EBNeNP7I6_o</string>
+    <string name="google_app_id" translatable="false">1:462065037727:android:8efcb0a183433670</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC0GLVzf_GZbD_1u7SLcRf5EBNeNP7I6_o</string>
+    <string name="google_storage_bucket" translatable="false">calendarapp-f719d.appspot.com</string>
+    <string name="project_id" translatable="false">calendarapp-f719d</string>
+</resources>
