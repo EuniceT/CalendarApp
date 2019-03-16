@@ -13,18 +13,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SearchEvent"></activity>
-        <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".AddingActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".SearchEvent"
+            android:label="@string/title_activity_searching" />
+        <activity
+            android:name=".AddingActivity"
+            android:label="@string/title_activity_adding" />
+        <activity
+            android:name=".ViewEvent"
+            android:label="@string/title_activity_viewing" />
+        <activity
+            android:name=".RemoveEvent"
+            android:label="@string/title_activity_removing" />
+        <activity
+            android:name=".SignupActivity"
+            android:label="Sign up" />
     </application>
 
 </manifest>

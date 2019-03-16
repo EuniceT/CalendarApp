@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     Button RemoveButton;
     Button LoginButton;
     String the_date;
+    public boolean loggedIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         SearchButton = findViewById(R.id.SearchButton);
         RemoveButton = findViewById(R.id.Removebutton);
         LoginButton = findViewById(R.id.LoginButton);
+
+        loggedIn = false;
 
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
@@ -68,8 +72,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void EventLogin(View view) {
 
-        Intent intent = new Intent (MainActivity.this, LoginActivity.class );
-        startActivity(intent);
+        if (loggedIn) {
+            Toast.makeText(getBaseContext(), "You have already logged in", Toast.LENGTH_LONG).show();
+        } else {
+            Intent intent = new Intent (MainActivity.this, LoginActivity.class );
+//            intent.putExtra("loggedIn", loggedIn)
+            startActivity(intent);
+        }
     }
 
     public void EventSearch(View view) {

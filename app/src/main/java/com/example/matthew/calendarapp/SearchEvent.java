@@ -1,8 +1,11 @@
 package com.example.matthew.calendarapp;
 
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -19,95 +22,101 @@ import java.util.ArrayList;
 
 public class SearchEvent extends AppCompatActivity {
 
+    EditText titleText;
     Button searchButton;
     FirebaseDatabase database;
     DatabaseReference myRef;
     ArrayList<Event> EventList;
     ListView listView;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
-        searchButton = findViewById((R.id.searchButton));
-        listView = findViewById((R.id.listView));
+        titleText = findViewById(R.id.eventTitle);
+
+        searchButton = findViewById((R.id.searchButton2));
+        listView = findViewById(R.id.listView);
         EventList = new ArrayList<>();
 
-
-        FirebaseApp.initializeApp(this);
         database = FirebaseDatabase.getInstance();
-        myRef = database.getReference("message");
+        myRef = database.getReference("Events");
 
+        if (titleText != null)
+            hideAllKeyBoard(titleText);
+
+        handlingClick();
     }
-
     protected void onStart() {
-        super.onStart();
 
-//        myRef.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot dataSnapshot) {
-//
-//                for (DataSnapshot eventSnapshot : dataSnapshot.getChildren()) {
-//                    Event event = eventSnapshot.getValue(Event.class);
-//                    EventList.add(event);
-//                }
-//
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError error) {
-//                // Failed to read value
-////                Log.w(TAG, "Failed to read value.", error.toException());
-//            }
-//        });
+        super.onStart();
+        myRef.addValueEventListener(new ValueEventListener()
+        {
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                for (DataSnapshot eventSnapshot : dataSnapshot.getChildren()) {
+                    Event event = eventSnapshot.getValue(Event.class);
+                    EventList.add(event);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) { }
+        });
     }
 
-    public void searchingEvent() {
-        EditText titleText = findViewById(R.id.title);
-        String title = titleText.getText().toString();
+    public void handlingClick() {
 
-        EditText timeText = findViewById(R.id.time);
-        String time = timeText.getText().toString();
+        searchButton.setOnClickListener(new View.OnClickListener() {
 
-        EditText descripText = findViewById(R.id.description);
-        String descrip = descripText.getText().toString();
+            public void onClick(View view) {
+                listView.setAdapter(null);
+                System.out.println(EventList);
+                String title = titleText.getText().toString();
 
-        if (title.length() > 0 || time.length() > 0 || descrip.length() > 0) {
+                if (title.length() <= 0) {
+                    Toast.makeText(getBaseContext(), "Please fill out one blank", Toast.LENGTH_LONG).show();
+                }
 
-        } else {
-            Toast.makeText(this, "Please fill out one blank", Toast.LENGTH_LONG).show();
-        }
+                boolean found = false;
+                ArrayList<Event> searchedList = new ArrayList<>();
+                for (Event event_obj : EventList)
+                {
+                    if (title.equals(event_obj.getTitle()))
+                    {
+                        searchedList.add(event_obj);
+                        found = true;
+                    }
+                }
 
-//        EditText remove_text = (EditText) findViewById(R.id.editRemoveTitle);
-//        String string_text = remove_text.getText().toString();  // Extracts name from EditText
-//        System.out.println(EventList);
-//
-        boolean found = false;
-        for (Event event_obj : EventList)
-        {
-            if (titleText.equals(event_obj.getTitle()))
-            {
-//                EventList.remove(event_obj.getTitle());
-//                myRef.child(event_obj.getTitle()).removeValue();
-//                Toast.makeText(this, titleText + " successfully removed", Toast.LENGTH_LONG).show();
-
-//                EventAdapter eventAdapter = new EventAdapter(SearchEvent.this, EventList);
-//                listView.setAdapter(eventAdapter);
-
-                found = true;
-            } else if (timeText.equals(event_obj.getTime())) {
-
-            } else if (descripText.equals(event_obj.getDescription())) {
-
+                if (!found)
+                {
+                    Toast.makeText(getBaseContext(), "Sorry, " + title + " not found. Please Try Again", Toast.LENGTH_LONG).show();
+                } else {
+                    SearchEventAdapter eventAdapter = new SearchEventAdapter(SearchEvent.this, searchedList);
+                    listView.setAdapter(eventAdapter);
+                }
             }
-        }
+        });
+    }
 
-        if (!found)
-        {
-            Toast.makeText(this, "Sorry, " + titleText + " not found. Please Try Again", Toast.LENGTH_LONG).show();
-        }
 
+    public void hideKeyBoard(View view) {
+        InputMethodManager imm = (InputMethodManager)
+                getSystemService(AddingActivity.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+    }
+
+    public void hideAllKeyBoard(EditText editText) {
+        editText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean isFocus) {
+                if (!isFocus)
+                    hideKeyBoard(view);
+            }
+        });
     }
 
 

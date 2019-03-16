@@ -24,7 +24,6 @@ public class RemoveEvent extends AppCompatActivity {
     private FirebaseDatabase database;
     private DatabaseReference myRef;
     private ListView ListView;
-
     private ArrayList<Event> EventList;
 
 
@@ -52,9 +51,6 @@ public class RemoveEvent extends AppCompatActivity {
                     Event event = eventSnapshot.getValue(Event.class);
                     EventList.add(event);
                 }
-
-               // EventAdapter eventAdapter = new EventAdapter(RemoveEvent.this, EventList);
-               // ListView.setAdapter(eventAdapter);
             }
 
             @Override
@@ -72,7 +68,7 @@ public class RemoveEvent extends AppCompatActivity {
         System.out.println(EventList);
 
         //listAdapter.clear();    // clears any content
-        EditText remove_text = (EditText) findViewById(R.id.editRemoveTitle);
+        EditText remove_text = findViewById(R.id.editRemoveTitle);
         String string_text = remove_text.getText().toString();  // Extracts name from EditText
         System.out.println(EventList);
 

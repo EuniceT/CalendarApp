@@ -49,8 +49,6 @@ public class ViewEvent extends AppCompatActivity {
 
                 for (DataSnapshot eventSnapshot : dataSnapshot.getChildren()) {
                     Event event = eventSnapshot.getValue(Event.class);
-
-
                     EventList.add(event);
                 }
 

@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">CalendarApp</string>
     <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_adding">Adding event</string>
+    <string name="title_activity_removing">Removing event</string>
+    <string name="title_activity_searching">Searching for events</string>
+    <string name="title_activity_viewing">Viewing events</string>
+
+
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
@@ -17,7 +23,6 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="calendar_icon">calendar_icon</string>
-    <string name="title_activity_search">SearchActivity</string>
     <string name="event_title">Event Title</string>
     <string name="login">login</string>
 </resources>
